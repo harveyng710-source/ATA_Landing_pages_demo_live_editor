@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hong Kong Accounting & Tax Compliance | OffshoreCompanyCorp</title>
+<meta name="description" content="Full-service HK annual compliance: bookkeeping, statutory audit, BIR51, Employer's Return. CPA-certified team. From $950/year.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+<!-- ═══════════════════════════════════════════════════
+     PAGE STYLES  (id="page-styles" — exported as-is)
+     ═══════════════════════════════════════════════════ -->
+<style id="page-styles">
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0D2545;--navy2:#163361;--navy3:#0A1E38;
+  --gold:#C8860A;--gold-l:#F5A623;
+  --teal:#0B7A75;--teal-l:#E6F5F4;
+  --cream:#FAFAF7;--gray:#6B7280;--gray-l:#F3F4F6;--gray-b:#E5E7EB;
+  --white:#fff;--green:#15803D;
+  --fd:'DM Serif Display',Georgia,serif;
+  --fb:'Sora',sans-serif;
+  --max:1120px;--r:12px;--rl:20px;
+  --sh:0 4px 24px rgba(13,37,69,.10);
+  --shl:0 12px 48px rgba(13,37,69,.16);
+  --tr:.22s cubic-bezier(.4,0,.2,1);
+}
+body{font-family:var(--fb);background:var(--cream);color:var(--navy);line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}img{display:block;max-width:100%}button{font-family:var(--fb)}
+
+/* ── IMG SLOTS ── */
+.img-slot{overflow:hidden;border-radius:var(--r);position:relative;
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,rgba(13,37,69,.05),rgba(11,122,117,.05));
+  border:2px dashed var(--gray-b)}
+.img-slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none}
+.img-slot img.active{display:block}
+.img-slot-label{display:flex;flex-direction:column;align-items:center;gap:6px;
+  color:rgba(13,37,69,.3);font-size:.75rem;font-weight:600;text-align:center;padding:1.5rem;pointer-events:none;z-index:1}
+.img-slot-label svg{width:28px;height:28px;opacity:.4}
+.img-slot img.active~.img-slot-label{display:none}
+
+/* ── SECTION BG LAYERS ── */
+.s-bg{position:absolute;inset:0;z-index:0;pointer-events:none;
+  background-size:cover;background-position:center;background-repeat:no-repeat}
+.has-bg{position:relative}
+.has-bg>*:not(.s-bg){position:relative;z-index:1}
+
+/* ── NAV ── */
+nav{background:var(--navy);padding:0 2rem;position:sticky;top:0;z-index:90;box-shadow:0 2px 12px rgba(0,0,0,.3)}
+.nav-i{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav-logo{font-family:var(--fd);font-size:1.25rem;color:var(--white);letter-spacing:.02em}
+.nav-logo span{color:var(--gold-l)}
+.nav-links{display:flex;gap:2rem}
+.nav-links a{color:rgba(255,255,255,.75);font-size:.875rem;font-weight:500;transition:color var(--tr)}
+.nav-links a:hover{color:#fff}
+.nav-cta{background:var(--gold);color:#fff;padding:.5rem 1.25rem;border-radius:6px;font-weight:600;font-size:.875rem;transition:background var(--tr)}
+.nav-cta:hover{background:var(--gold-l)}
+
+/* ── HERO ── */
+.hero{background:linear-gradient(135deg,var(--navy3) 0%,var(--navy) 50%,var(--navy2) 100%);padding:5rem 2rem 4rem;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 85% 40%,rgba(200,134,10,.14) 0%,transparent 55%),radial-gradient(ellipse at 15% 80%,rgba(11,122,117,.08) 0%,transparent 45%);pointer-events:none;z-index:1}
+.hero::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;z-index:1}
+.hero-layout{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1fr 420px;gap:4rem;align-items:center;position:relative;z-index:2}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(200,134,10,.2);border:1px solid rgba(200,134,10,.4);color:var(--gold-l);padding:.35rem 1rem;border-radius:50px;font-size:.8rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;margin-bottom:1.5rem}
+.hero h1{font-family:var(--fd);font-size:clamp(2.2rem,4.5vw,3.6rem);color:#fff;line-height:1.12;margin-bottom:1.25rem}
+.hero h1 em{color:var(--gold-l);font-style:italic}
+.hero-sub{color:rgba(255,255,255,.75);font-size:1.05rem;max-width:500px;margin-bottom:2rem;line-height:1.7}
+.hero-tabs{display:flex;gap:.75rem;margin-bottom:2.5rem;flex-wrap:wrap}
+.hero-tab{padding:.55rem 1.1rem;border-radius:8px;font-size:.875rem;font-weight:600;cursor:pointer;border:2px solid rgba(255,255,255,.25);color:rgba(255,255,255,.65);transition:all var(--tr);background:transparent}
+.hero-tab.on{background:var(--gold);border-color:var(--gold);color:#fff}
+.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-p{background:var(--gold);color:#fff;padding:.875rem 2rem;border-radius:8px;font-weight:700;font-size:.975rem;transition:all var(--tr);border:none;cursor:pointer;display:inline-flex;align-items:center;gap:.4rem;box-shadow:0 4px 16px rgba(200,134,10,.4)}
+.btn-p:hover{background:var(--gold-l);transform:translateY(-1px)}
+.btn-g{background:transparent;color:#fff;padding:.875rem 1.75rem;border-radius:8px;font-weight:600;font-size:.975rem;border:2px solid rgba(255,255,255,.35);cursor:pointer;display:inline-block;transition:all var(--tr)}
+.btn-g:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.hero-trust{margin-top:2.5rem;display:flex;align-items:center;gap:2rem;flex-wrap:wrap;padding-top:2rem;border-top:1px solid rgba(255,255,255,.1)}
+.trust-i{color:rgba(255,255,255,.6);font-size:.82rem;display:flex;align-items:center;gap:.4rem}
+.trust-i strong{color:#fff}
+.hero-img-wrap{position:relative}
+.hero-img-wrap .img-slot{height:420px;border-radius:var(--rl);border-color:rgba(255,255,255,.15);background:linear-gradient(135deg,rgba(255,255,255,.04),rgba(11,122,117,.12))}
+.hero-img-wrap .img-slot-label{color:rgba(255,255,255,.3)}
+.hero-stat{position:absolute;bottom:-20px;left:-20px;background:#fff;border-radius:var(--r);padding:1rem 1.25rem;box-shadow:var(--shl);z-index:3}
+.hero-stat .sn{font-size:1.5rem;font-weight:800;color:var(--navy);line-height:1}
+.hero-stat .sl{font-size:.75rem;color:var(--gray);max-width:80px;margin-top:2px}
+
+/* ── SECTION COMMONS ── */
+section{padding:5rem 2rem}
+.si{max-width:var(--max);margin:0 auto}
+.slabel{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem}
+.stitle{font-family:var(--fd);font-size:clamp(1.75rem,3.5vw,2.5rem);color:var(--navy);line-height:1.2;margin-bottom:1rem}
+.ssub{color:var(--gray);font-size:1rem;max-width:580px;line-height:1.7}
+.split{display:grid;grid-template-columns:1fr 460px;gap:4rem;align-items:center}
+.split.rev{grid-template-columns:460px 1fr}
+.split.rev .simg{order:-1}
+
+/* ── WHO ── */
+.who{background:var(--white)}
+.who-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;margin-top:2.5rem}
+.wcard{border:1.5px solid var(--gray-b);border-radius:var(--r);padding:1.5rem;transition:all var(--tr);background:var(--cream)}
+.wcard:hover{border-color:var(--teal);box-shadow:var(--sh);transform:translateY(-2px)}
+.wi{font-size:1.6rem;margin-bottom:.875rem}
+.wcard h3{font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:.4rem}
+.wcard p{font-size:.875rem;color:var(--gray);line-height:1.65}
+.who-not{margin-top:2rem;padding:1.1rem 1.4rem;background:#FEF9EE;border:1px solid #FDE68A;border-radius:var(--r);font-size:.875rem;color:#92400E}
+
+/* ── INCLUDED ── */
+.included{background:var(--navy)}
+.included .stitle{color:#fff}
+.included .ssub{color:rgba(255,255,255,.6)}
+.stbl{margin-top:2.5rem;width:100%;border-collapse:collapse}
+.stbl th{background:rgba(255,255,255,.07);color:rgba(255,255,255,.5);padding:.75rem 1rem;text-align:left;font-size:.75rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.1)}
+.stbl td{padding:.9rem 1rem;color:rgba(255,255,255,.82);font-size:.875rem;border-bottom:1px solid rgba(255,255,255,.05)}
+.stbl tr:hover td{background:rgba(255,255,255,.03)}
+.stbl td:first-child{font-weight:600;color:#fff}
+.br{background:rgba(200,134,10,.25);color:var(--gold-l);padding:.2rem .65rem;border-radius:4px;font-size:.72rem;font-weight:700}
+.bo{background:rgba(255,255,255,.1);color:rgba(255,255,255,.5);padding:.2rem .65rem;border-radius:4px;font-size:.72rem}
+.audit-note{color:rgba(255,255,255,.4);font-size:.78rem;margin-top:1.25rem}
+
+/* ── PRICING ── */
+.pricing{background:var(--cream)}
+.pdiscl{display:flex;align-items:flex-start;gap:.75rem;background:#FFFBEB;border:1px solid #FDE68A;border-radius:var(--r);padding:1rem 1.25rem;margin-bottom:2.5rem;font-size:.85rem;color:#78350F;line-height:1.6}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;align-items:start}
+.pcard{background:#fff;border-radius:var(--rl);padding:2rem;border:2px solid var(--gray-b);position:relative;transition:all var(--tr);display:flex;flex-direction:column}
+.pcard:hover{border-color:var(--teal);box-shadow:var(--shl);transform:translateY(-4px)}
+.pcard.feat{border-color:var(--gold);box-shadow:0 0 0 4px rgba(200,134,10,.07),var(--shl);background:linear-gradient(180deg,#FFFDF7,#fff)}
+.pbadge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--gold);color:#fff;padding:.3rem 1.1rem;border-radius:50px;font-size:.72rem;font-weight:700;white-space:nowrap;letter-spacing:.06em;text-transform:uppercase}
+.pname{font-size:.72rem;font-weight:700;color:var(--teal);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.35rem}
+.ptitle{font-family:var(--fd);font-size:1.45rem;color:var(--navy);margin-bottom:.5rem}
+.pdesc{font-size:.84rem;color:var(--gray);margin-bottom:1.5rem;line-height:1.65;min-height:52px}
+.pfrom{font-size:.72rem;font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:.15rem}
+.prow{display:flex;align-items:baseline;gap:.25rem}
+.prow .amt{font-size:2.1rem;font-weight:800;color:var(--navy);line-height:1}
+.prow .per{font-size:.85rem;color:var(--gray);margin-left:.1rem}
+.phkd{font-size:.78rem;color:var(--gray);margin-bottom:.4rem}
+.ptier{display:inline-flex;align-items:center;gap:.35rem;font-size:.75rem;color:var(--teal);font-weight:600;background:var(--teal-l);padding:.2rem .65rem;border-radius:20px;margin-bottom:1.5rem}
+.pdiv{border:none;border-top:1px solid var(--gray-b);margin:1.25rem 0}
+.pfeats{list-style:none;display:flex;flex-direction:column;gap:.55rem;margin-bottom:0;flex:1}
+.pfeats li{display:flex;align-items:flex-start;gap:.6rem;font-size:.845rem}
+.pfeats .ck{color:var(--green);font-size:.85rem;flex-shrink:0;margin-top:2px;font-weight:700}
+.pfeats li.inc{color:var(--navy);font-weight:600}
+/* Add-ons footnote inside card */
+.pcard-addons{margin-top:1.1rem;padding-top:1rem;border-top:1px dashed var(--gray-b);margin-bottom:1.5rem}
+.pcard-addons-label{font-size:.7rem;font-weight:700;color:var(--gray);text-transform:uppercase;letter-spacing:.07em;margin-bottom:.45rem}
+.pcard-addons-list{font-size:.78rem;color:#9CA3AF;line-height:1.7}
+/* Accordion block */
+.acc-block{margin-top:2rem;border:1.5px solid var(--gray-b);border-radius:var(--r);overflow:hidden;background:#fff}
+.acc-trigger{width:100%;display:flex;align-items:center;justify-content:space-between;
+  padding:1rem 1.25rem;background:none;border:none;cursor:pointer;gap:1rem;
+  transition:background var(--tr)}
+.acc-trigger:hover{background:var(--gray-l)}
+.acc-trigger-left{display:flex;align-items:center;gap:.75rem}
+.acc-trigger-title{font-size:.9rem;font-weight:700;color:var(--navy)}
+.acc-trigger-sub{font-size:.75rem;color:var(--gray);margin-top:1px}
+.acc-badge{background:rgba(200,134,10,.15);color:var(--gold);padding:.18rem .55rem;border-radius:4px;font-size:.68rem;font-weight:700;white-space:nowrap}
+.acc-chevron{color:var(--gray);font-size:.85rem;transition:transform .25s;flex-shrink:0}
+.acc-block.open .acc-chevron{transform:rotate(180deg)}
+.acc-body{display:none;border-top:1px solid var(--gray-b)}
+.acc-block.open .acc-body{display:block}
+/* Revenue slider widget */
+.rev-slider-wrap{padding:1.5rem 1.5rem 0.5rem}
+.rev-slider-top{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:1.25rem;flex-wrap:wrap}
+.rev-slider-left{}
+.rev-slider-label{font-size:.72rem;font-weight:700;color:var(--gray);text-transform:uppercase;letter-spacing:.07em;margin-bottom:.35rem}
+.rev-display{font-size:1.5rem;font-weight:800;color:var(--navy);line-height:1;display:flex;align-items:baseline;gap:.3rem}
+.rev-display-sub{font-size:.78rem;color:var(--gray);font-weight:400;margin-top:.2rem}
+.rev-result{text-align:right}
+.rev-result-label{font-size:.72rem;font-weight:700;color:var(--gray);text-transform:uppercase;letter-spacing:.07em;margin-bottom:.35rem}
+.rev-price{font-size:1.5rem;font-weight:800;color:var(--teal);line-height:1}
+.rev-price-sub{font-size:.78rem;color:var(--gray);font-weight:400;margin-top:.2rem}
+/* The slider track */
+.rev-range-wrap{padding:0 0 1.5rem;position:relative}
+input.rev-range{
+  width:100%;height:6px;border-radius:3px;outline:none;cursor:pointer;
+  -webkit-appearance:none;appearance:none;
+  background:linear-gradient(to right,#0B7A75 0%,#E5E7EB 0%);
+}
+input.rev-range::-webkit-slider-thumb{
+  -webkit-appearance:none;width:22px;height:22px;border-radius:50%;
+  background:var(--teal);border:3px solid #fff;
+  box-shadow:0 2px 8px rgba(11,122,117,.35);cursor:pointer;
+  transition:transform .15s,box-shadow .15s;
+}
+input.rev-range::-webkit-slider-thumb:hover{transform:scale(1.15);box-shadow:0 3px 12px rgba(11,122,117,.45)}
+input.rev-range::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:var(--teal);border:3px solid #fff;box-shadow:0 2px 8px rgba(11,122,117,.35);cursor:pointer}
+.rev-ticks{display:flex;justify-content:space-between;margin-top:.5rem;padding:0 2px}
+.rev-tick{font-size:.62rem;color:#9CA3AF;text-align:center;line-height:1.3;white-space:nowrap}
+.rev-tier-bar{
+  display:flex;height:4px;border-radius:2px;overflow:hidden;margin-top:1rem;gap:1px;
+}
+.rev-tier-seg{flex:1;background:var(--gray-b);border-radius:2px;transition:background .3s}
+.rev-tier-seg.active{background:var(--teal)}
+/* Add-ons inside accordion */
+.acc-addons{padding:.25rem 1.25rem 1.25rem}
+.acc-addons-title{font-size:.72rem;font-weight:700;color:var(--gray);text-transform:uppercase;letter-spacing:.07em;padding:.75rem 0 .5rem;border-top:1px solid var(--gray-b)}
+.acc-arow{display:flex;justify-content:space-between;align-items:center;padding:.6rem 0;border-bottom:1px solid var(--gray-b);font-size:.845rem}
+.acc-arow:last-child{border-bottom:none}
+.acc-aname{color:var(--navy);font-weight:500}
+.acc-anote{color:var(--gray);font-size:.75rem;margin-top:1px}
+.acc-aprice{font-weight:700;color:var(--navy);white-space:nowrap;margin-left:1rem}
+.acc-aprice.ct{color:var(--teal)}
+.pbtn{width:100%;padding:.875rem;border-radius:8px;font-weight:700;font-size:.9rem;cursor:pointer;border:2px solid var(--navy);color:var(--navy);background:transparent;transition:all var(--tr);margin-top:auto}
+.pbtn:hover{background:var(--navy);color:#fff}
+.pbtn.fb{background:var(--gold);border-color:var(--gold);color:#fff}
+.pbtn.fb:hover{background:var(--gold-l);border-color:var(--gold-l)}
+.pnote{margin-top:2rem;padding:1.1rem 1.4rem;background:var(--teal-l);border-left:4px solid var(--teal);border-radius:0 var(--r) var(--r) 0;font-size:.875rem;color:#1A5C58;line-height:1.7}
+
+/* ── CREDENTIALS ── */
+.credentials{background:#fff}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.25rem;margin-top:2rem}
+.ccard{text-align:center;padding:1.75rem 1.25rem;border:1.5px solid var(--gray-b);border-radius:var(--r);transition:all var(--tr)}
+.ccard:hover{border-color:var(--teal);box-shadow:var(--sh)}
+.ci{font-size:2.25rem;margin-bottom:.65rem}
+.cn{font-size:1.9rem;font-weight:800;color:var(--navy);line-height:1.1}
+.cl{font-size:.82rem;color:var(--gray);margin-top:.3rem}
+
+/* ── PROCESS ── */
+.process{background:var(--teal-l)}
+.pgrd{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;margin-top:3rem}
+.pstep .snum{width:48px;height:48px;background:var(--teal);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;margin-bottom:1rem;box-shadow:0 4px 12px rgba(11,122,117,.3)}
+.pstep h3{font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:.35rem}
+.pstep p{font-size:.85rem;color:#2D6B67;line-height:1.65}
+.psla{margin-top:2.5rem;display:flex;gap:2rem;flex-wrap:wrap}
+.psla-i{font-size:.875rem;color:var(--teal);font-weight:600}
+
+/* ── REVIEWS ── */
+.reviews{background:var(--cream)}
+.rgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.5rem;margin-top:2.5rem}
+.rcard{background:#fff;border-radius:var(--r);padding:1.75rem;border:1.5px solid var(--gray-b);transition:box-shadow var(--tr)}
+.rcard:hover{box-shadow:var(--sh)}
+.stars{color:var(--gold);font-size:.95rem;margin-bottom:.875rem;letter-spacing:2px}
+.rtext{font-size:.9rem;color:var(--navy);line-height:1.7;margin-bottom:1rem;font-style:italic}
+.rauth{font-size:.8rem;color:var(--gray);font-weight:600}
+
+/* ── FAQ ── */
+.faq{background:#fff}
+.flayout{display:grid;grid-template-columns:1fr 380px;gap:4rem;align-items:start}
+.fitem{border-bottom:1px solid var(--gray-b)}
+.fq{width:100%;text-align:left;padding:1.1rem 0;display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:.925rem;color:var(--navy);background:none;border:none;cursor:pointer;gap:1rem;line-height:1.5}
+.ficon{flex-shrink:0;width:24px;height:24px;background:var(--navy);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;transition:background var(--tr)}
+.fa{padding:0 0 1.1rem;font-size:.875rem;color:var(--gray);line-height:1.75;display:none}
+.fitem.open .fa{display:block}
+.fitem.open .ficon{background:var(--gold)}
+.faq-img{position:sticky;top:5rem}
+.faq-img .img-slot{height:420px}
+
+/* ── CTA ── */
+.cta{background:linear-gradient(135deg,var(--navy3) 0%,var(--navy) 60%,var(--navy2) 100%);padding:5rem 2rem;overflow:hidden}
+.cta-in{max-width:640px;margin:0 auto;text-align:center;position:relative;z-index:2}
+.cta h2{font-family:var(--fd);font-size:clamp(1.75rem,4vw,2.5rem);color:#fff;margin-bottom:.875rem}
+.cta p{color:rgba(255,255,255,.65);margin-bottom:2.5rem;font-size:1rem;line-height:1.7}
+.cform{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-radius:16px;padding:2rem}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.ff{display:flex;flex-direction:column;gap:.4rem}
+.ff label{font-size:.78rem;color:rgba(255,255,255,.55);font-weight:600;letter-spacing:.04em}
+.ff input,.ff select{padding:.7rem 1rem;border-radius:8px;border:1.5px solid rgba(255,255,255,.18);background:rgba(255,255,255,.07);color:#fff;font-size:.875rem;font-family:var(--fb);outline:none;transition:border-color var(--tr)}
+.ff input::placeholder{color:rgba(255,255,255,.3)}
+.ff input:focus,.ff select:focus{border-color:var(--gold-l)}
+.ff select option{background:var(--navy);color:#fff}
+.ff.full{grid-column:1/-1}
+.tbadges{display:flex;justify-content:center;gap:1.5rem;margin-top:1.25rem;flex-wrap:wrap}
+.tbadge{font-size:.78rem;color:rgba(255,255,255,.45);display:flex;align-items:center;gap:.35rem}
+
+/* ── STICKY + FOOTER ── */
+.sbar{position:fixed;bottom:0;left:0;right:0;z-index:89;background:var(--navy);border-top:2px solid var(--gold);padding:.875rem 2rem;display:flex;align-items:center;justify-content:center;gap:1.5rem;box-shadow:0 -4px 24px rgba(0,0,0,.35)}
+.sbar-t{color:rgba(255,255,255,.7);font-size:.875rem}
+.sbar-t strong{color:#fff}
+footer{background:var(--navy3);padding:2rem;text-align:center;color:rgba(255,255,255,.35);font-size:.78rem;border-top:1px solid rgba(255,255,255,.06)}
+footer a{color:rgba(255,255,255,.55);transition:color var(--tr)}
+footer a:hover{color:#fff}
+
+/* ── ANIM ── */
+@keyframes fup{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+.hero-left>*{animation:fup .65s ease both}
+.hero-left>*:nth-child(1){animation-delay:.08s}
+.hero-left>*:nth-child(2){animation-delay:.18s}
+.hero-left>*:nth-child(3){animation-delay:.28s}
+.hero-left>*:nth-child(4){animation-delay:.38s}
+.hero-left>*:nth-child(5){animation-delay:.48s}
+.hero-left>*:nth-child(6){animation-delay:.56s}
+.hero-img-wrap{animation:fup .8s .3s ease both}
+.rev{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.rev.vis{opacity:1;transform:none}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .hero-layout{grid-template-columns:1fr}.hero-img-wrap{display:none}
+  .split,.split.rev{grid-template-columns:1fr}.split.rev .simg{order:0}
+  .flayout{grid-template-columns:1fr}.faq-img{display:none}
+  .pgrid{grid-template-columns:1fr;max-width:480px;margin-left:auto;margin-right:auto}
+}
+@media(max-width:768px){.pgrid{max-width:100%}.pgrd{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.fgrid{grid-template-columns:1fr}.hero-tabs{flex-direction:column}nav .nav-links{display:none}.sbar-t{display:none}}
+</style>
+
+<!-- ═══════════════════════════════════════════════════
+     EDITOR STYLES  (NOT exported)
+     ═══════════════════════════════════════════════════ -->
+<style id="editor-styles">
+/* Editor toggle tab */
+#ed-btn{
+  position:fixed;top:50%;right:0;transform:translateY(-50%);z-index:200;
+  background:var(--navy);color:#fff;border:none;
+  border-radius:10px 0 0 10px;padding:14px 10px;
+  cursor:pointer;box-shadow:-4px 0 20px rgba(0,0,0,.25);
+  transition:background .2s,right .35s cubic-bezier(.4,0,.2,1);
+  display:flex;flex-direction:column;align-items:center;gap:6px;
+}
+#ed-btn:hover{background:var(--gold)}
+#ed-btn svg{width:18px;height:18px}
+#ed-btn span{font-size:9px;font-weight:800;letter-spacing:.1em;writing-mode:vertical-rl;text-orientation:mixed}
+#ed-btn.panel-open{right:400px}
+
+/* Panel */
+#ed-panel{
+  position:fixed;top:0;right:-400px;width:400px;height:100vh;
+  background:#fff;z-index:199;
+  box-shadow:-6px 0 40px rgba(13,37,69,.18);
+  transition:right .35s cubic-bezier(.4,0,.2,1);
+  display:flex;flex-direction:column;
+  font-family:var(--fb);
+  border-left:1px solid var(--gray-b);
+}
+#ed-panel.open{right:0}
+
+/* Panel header */
+.ep-hd{
+  background:var(--navy);color:#fff;
+  padding:16px 18px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;
+}
+.ep-hd h2{font-family:var(--fd);font-size:1.05rem;color:#fff;margin:0}
+.ep-hd p{font-size:.7rem;color:rgba(255,255,255,.45);margin-top:2px}
+#ep-x{background:none;border:none;color:rgba(255,255,255,.6);cursor:pointer;font-size:1.3rem;line-height:1;padding:4px 6px;border-radius:4px;transition:all .2s}
+#ep-x:hover{background:rgba(255,255,255,.1);color:#fff}
+
+/* Tabs */
+.ep-tabs{display:flex;border-bottom:2px solid var(--gray-b);flex-shrink:0;background:#fafafa}
+.ep-tab{flex:1;padding:10px 4px;font-size:.73rem;font-weight:700;letter-spacing:.04em;background:none;border:none;cursor:pointer;color:var(--gray);border-bottom:2px solid transparent;margin-bottom:-2px;transition:all .2s}
+.ep-tab.on{color:var(--navy);border-bottom-color:var(--gold)}
+
+/* Panel body */
+.ep-body{flex:1;overflow-y:auto;padding:0}
+.ep-pane{display:none;padding:14px}
+.ep-pane.on{display:block}
+
+/* Section row in images tab */
+.sec-row{
+  display:flex;align-items:center;gap:10px;
+  padding:10px 14px;border-bottom:1px solid var(--gray-b);
+  cursor:pointer;transition:background .15s;
+}
+.sec-row:hover{background:#f8f9fa}
+.sec-row:last-child{border-bottom:none}
+.sec-thumb{width:48px;height:34px;border-radius:5px;border:1.5px solid var(--gray-b);overflow:hidden;flex-shrink:0;background:var(--gray-l);display:flex;align-items:center;justify-content:center;font-size:.55rem;color:var(--gray)}
+.sec-thumb img{width:100%;height:100%;object-fit:cover;display:none}
+.sec-thumb img.has{display:block}
+.sec-info{flex:1}
+.sec-name{font-size:.82rem;font-weight:700;color:var(--navy)}
+.sec-type{font-size:.7rem;color:var(--gray)}
+.sec-arrow{color:var(--gray);font-size:.8rem;transition:transform .2s}
+.sec-row.open .sec-arrow{transform:rotate(90deg)}
+
+/* Section body (expanded) */
+.sec-body{display:none;padding:12px 14px;background:#fafafa;border-bottom:1px solid var(--gray-b)}
+.sec-body.on{display:block}
+
+/* Drop zone */
+.dzone{
+  border:2px dashed var(--gray-b);border-radius:8px;padding:14px;
+  text-align:center;cursor:pointer;transition:all .2s;background:#fff;
+  position:relative;
+}
+.dzone:hover,.dzone.dg{border-color:var(--teal);background:var(--teal-l)}
+.dzone input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
+.dzone-ico{font-size:1.4rem;margin-bottom:3px}
+.dzone-t{font-size:.75rem;color:var(--gray);font-weight:600}
+.dzone-s{font-size:.67rem;color:#9CA3AF;margin-top:1px}
+
+/* URL row */
+.url-row{display:flex;gap:6px;margin-top:8px}
+.url-inp{flex:1;padding:7px 10px;border:1.5px solid var(--gray-b);border-radius:7px;font-size:.78rem;font-family:var(--fb);outline:none;transition:border-color .2s}
+.url-inp:focus{border-color:var(--teal)}
+.url-btn{padding:7px 12px;background:var(--teal);color:#fff;border:none;border-radius:7px;font-size:.75rem;font-weight:700;cursor:pointer;white-space:nowrap;transition:background .2s}
+.url-btn:hover{background:#0a6b66}
+
+/* Preview */
+.ep-prev{width:100%;height:72px;border-radius:7px;overflow:hidden;border:1.5px solid var(--gray-b);margin-top:8px;background:var(--gray-l);display:flex;align-items:center;justify-content:center;position:relative}
+.ep-prev img{width:100%;height:100%;object-fit:cover}
+.ep-prev-txt{font-size:.72rem;color:var(--gray)}
+.ep-clr{position:absolute;top:4px;right:4px;background:rgba(0,0,0,.55);color:#fff;border:none;border-radius:50%;width:18px;height:18px;font-size:.65rem;cursor:pointer;display:flex;align-items:center;justify-content:center}
+
+/* BG tab controls */
+.ctrl-lbl{font-size:.73rem;font-weight:700;color:var(--navy);display:block;margin-bottom:5px;margin-top:12px}
+.ctrl-lbl:first-child{margin-top:0}
+.ctrl-sel{width:100%;padding:8px 10px;border:1.5px solid var(--gray-b);border-radius:7px;font-size:.8rem;font-family:var(--fb);outline:none;background:#fff;transition:border-color .2s}
+.ctrl-sel:focus{border-color:var(--teal)}
+.range-row{display:flex;align-items:center;gap:8px;margin-top:10px}
+.range-row label{font-size:.72rem;font-weight:600;color:var(--gray);white-space:nowrap;min-width:68px}
+.range-row input[type=range]{flex:1;accent-color:var(--navy)}
+.range-row span{font-size:.7rem;color:var(--gray);min-width:34px;text-align:right}
+.color-row{display:flex;align-items:center;gap:8px;margin-top:10px}
+.color-row label{font-size:.72rem;font-weight:600;color:var(--gray);min-width:68px}
+.color-row input[type=color]{width:30px;height:26px;border:1.5px solid var(--gray-b);border-radius:5px;cursor:pointer;padding:2px}
+.presets{display:flex;gap:4px}
+.preset{width:22px;height:22px;border-radius:4px;border:2px solid transparent;cursor:pointer;transition:transform .15s}
+.preset:hover,.preset.on{transform:scale(1.2);border-color:var(--navy)}
+.pos-lbl{font-size:.72rem;font-weight:600;color:var(--gray);margin-top:10px;display:block;margin-bottom:5px}
+.pos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px}
+.pos-btn{aspect-ratio:1;border:1.5px solid var(--gray-b);border-radius:5px;background:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:.65rem;color:var(--gray);transition:all .15s}
+.pos-btn:hover,.pos-btn.on{border-color:var(--teal);background:var(--teal-l);color:var(--teal)}
+
+/* Layout tab */
+.layout-sec{margin-bottom:18px}
+.layout-sec h4{font-size:.75rem;font-weight:700;color:var(--navy);margin-bottom:8px;padding-bottom:5px;border-bottom:1px solid var(--gray-b);letter-spacing:.04em;text-transform:uppercase}
+.theme-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-bottom:4px}
+.theme-opt{border:2px solid var(--gray-b);border-radius:8px;padding:8px;cursor:pointer;transition:all .15s;background:none;display:flex;align-items:center;gap:8px;text-align:left}
+.theme-opt:hover{border-color:var(--teal)}
+.theme-opt.on{border-color:var(--gold);background:#FFFBEB}
+.swatches{display:flex;gap:2px}
+.sw{width:13px;height:13px;border-radius:3px}
+.tname{font-size:.7rem;font-weight:600;color:var(--navy)}
+.lopt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}
+.lopt{border:2px solid var(--gray-b);border-radius:7px;padding:7px 4px;cursor:pointer;text-align:center;transition:all .15s;background:none}
+.lopt:hover{border-color:var(--teal);background:var(--teal-l)}
+.lopt.on{border-color:var(--gold);background:#FFFBEB}
+.lopt svg{display:block;margin:0 auto 3px;opacity:.6}
+.lopt.on svg{opacity:1}
+.lopt span{font-size:.63rem;font-weight:600;color:var(--gray);display:block}
+.lopt.on span{color:var(--navy)}
+.tok-row{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.tok-row label{font-size:.7rem;font-weight:600;color:var(--gray);min-width:88px}
+.tok-row input[type=range]{flex:1;accent-color:var(--teal)}
+.tok-row span{font-size:.68rem;color:var(--gray);min-width:36px;text-align:right}
+
+/* Footer buttons */
+.ep-foot{padding:12px 14px;border-top:1px solid var(--gray-b);flex-shrink:0;display:flex;flex-direction:column;gap:6px}
+.ep-export{width:100%;padding:11px;background:var(--navy);color:#fff;border:none;border-radius:8px;font-size:.85rem;font-weight:700;cursor:pointer;transition:background .2s;display:flex;align-items:center;justify-content:center;gap:8px}
+.ep-export:hover{background:var(--gold)}
+.ep-reset{width:100%;padding:8px;background:none;border:1.5px solid var(--gray-b);border-radius:8px;font-size:.75rem;color:var(--gray);cursor:pointer;transition:all .2s}
+.ep-reset:hover{border-color:var(--gray);color:var(--navy)}
+
+/* Toast */
+#toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%) translateY(10px);background:var(--navy);color:#fff;padding:9px 18px;border-radius:8px;font-size:.8rem;font-weight:600;opacity:0;pointer-events:none;transition:all .3s;z-index:500;white-space:nowrap}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* Edit handles on sections */
+.edit-handle{display:none;position:absolute;top:10px;right:10px;z-index:10;align-items:center;gap:5px;background:rgba(13,37,69,.8);backdrop-filter:blur(6px);color:#fff;font-size:.7rem;font-weight:700;letter-spacing:.05em;padding:5px 10px;border-radius:6px;border:1px solid rgba(255,255,255,.15);cursor:pointer;transition:background .2s}
+.edit-handle:hover{background:var(--gold)}
+.edit-handle svg{width:12px;height:12px}
+body.ed-on .edit-handle{display:flex}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════
+     EDITOR PANEL
+     ═══════════════════════════════════════════════════ -->
+<button id="ed-btn" onclick="edToggle()" aria-label="Open Visual Editor">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+  <span>EDIT</span>
+</button>
+
+<div id="ed-panel">
+  <div class="ep-hd">
+    <div><h2>Visual Editor</h2><p>Images · Backgrounds · Layout &amp; Theme</p></div>
+    <button id="ep-x" onclick="edToggle()">✕</button>
+  </div>
+
+  <div class="ep-tabs">
+    <button class="ep-tab on" data-tab="images" onclick="epTab(this)">🖼 Images</button>
+    <button class="ep-tab" data-tab="bg" onclick="epTab(this)">🎨 Backgrounds</button>
+    <button class="ep-tab" data-tab="layout" onclick="epTab(this)">⚡ Layout</button>
+  </div>
+
+  <div class="ep-body">
+
+    <!-- ── TAB: IMAGES ── -->
+    <div class="ep-pane on" id="pane-images">
+      <!-- built by JS -->
+    </div>
+
+    <!-- ── TAB: BACKGROUNDS ── -->
+    <div class="ep-pane" id="pane-bg">
+      <div style="padding:14px">
+        <label class="ctrl-lbl">Select section</label>
+        <select class="ctrl-sel" id="bg-sel" onchange="bgSelChange()"></select>
+
+        <div class="dzone" id="bg-dz"
+          ondragover="event.preventDefault();this.classList.add('dg')"
+          ondragleave="this.classList.remove('dg')"
+          ondrop="bgDrop(event)">
+          <input type="file" accept="image/*" onchange="bgFile(event)">
+          <div class="dzone-ico">📸</div>
+          <div class="dzone-t">Drop image or click to upload</div>
+          <div class="dzone-s">Recommended 1920×1080 px</div>
+        </div>
+
+        <div class="url-row">
+          <input type="text" class="url-inp" id="bg-url" placeholder="Or paste image URL…">
+          <button class="url-btn" onclick="bgApplyUrl()">Apply</button>
+        </div>
+
+        <div class="ep-prev" id="bg-prev">
+          <span class="ep-prev-txt">No background set</span>
+        </div>
+
+        <div class="range-row">
+          <label>Overlay</label>
+          <input type="range" id="bg-op" min="0" max="100" value="55" oninput="bgRender()">
+          <span id="bg-op-v">55%</span>
+        </div>
+        <div class="color-row">
+          <label>Color</label>
+          <input type="color" id="bg-col" value="#0D2545" oninput="bgRender()">
+          <div class="presets">
+            <div class="preset on" style="background:#0D2545" title="Navy" onclick="bgPreset('#0D2545',this)"></div>
+            <div class="preset" style="background:#000" title="Black" onclick="bgPreset('#000000',this)"></div>
+            <div class="preset" style="background:#0B7A75" title="Teal" onclick="bgPreset('#0B7A75',this)"></div>
+            <div class="preset" style="background:#C8860A" title="Gold" onclick="bgPreset('#C8860A',this)"></div>
+            <div class="preset" style="background:#fff;border:1px solid #ddd" title="White" onclick="bgPreset('#ffffff',this)"></div>
+          </div>
+        </div>
+        <div class="range-row">
+          <label>Blur</label>
+          <input type="range" id="bg-blur" min="0" max="20" value="0" oninput="bgRender()">
+          <span id="bg-blur-v">0px</span>
+        </div>
+        <span class="pos-lbl">Background position</span>
+        <div class="pos-grid" id="pos-grid">
+          <button class="pos-btn" onclick="bgPos('top left',this)">↖</button>
+          <button class="pos-btn" onclick="bgPos('top center',this)">↑</button>
+          <button class="pos-btn" onclick="bgPos('top right',this)">↗</button>
+          <button class="pos-btn" onclick="bgPos('center left',this)">←</button>
+          <button class="pos-btn on" onclick="bgPos('center',this)">●</button>
+          <button class="pos-btn" onclick="bgPos('center right',this)">→</button>
+          <button class="pos-btn" onclick="bgPos('bottom left',this)">↙</button>
+          <button class="pos-btn" onclick="bgPos('bottom center',this)">↓</button>
+          <button class="pos-btn" onclick="bgPos('bottom right',this)">↘</button>
+        </div>
+        <button onclick="bgClear()" style="width:100%;margin-top:12px;padding:7px;background:none;border:1.5px solid var(--gray-b);border-radius:7px;font-size:.75rem;color:var(--gray);cursor:pointer">✕ Clear background for this section</button>
+      </div>
+    </div>
+
+    <!-- ── TAB: LAYOUT ── -->
+    <div class="ep-pane" id="pane-layout">
+      <div style="padding:14px">
+
+        <div class="layout-sec">
+          <h4>Color Theme</h4>
+          <div class="theme-grid" id="theme-grid">
+            <button class="theme-opt on" onclick="applyTheme('classic',this)"><div class="swatches"><div class="sw" style="background:#0D2545"></div><div class="sw" style="background:#C8860A"></div><div class="sw" style="background:#0B7A75"></div></div><span class="tname">Classic Navy</span></button>
+            <button class="theme-opt" onclick="applyTheme('midnight',this)"><div class="swatches"><div class="sw" style="background:#0F0F23"></div><div class="sw" style="background:#6C63FF"></div><div class="sw" style="background:#00D4AA"></div></div><span class="tname">Midnight Pro</span></button>
+            <button class="theme-opt" onclick="applyTheme('forest',this)"><div class="swatches"><div class="sw" style="background:#1A2E1A"></div><div class="sw" style="background:#4CAF50"></div><div class="sw" style="background:#2E7D32"></div></div><span class="tname">Forest Trust</span></button>
+            <button class="theme-opt" onclick="applyTheme('slate',this)"><div class="swatches"><div class="sw" style="background:#1E293B"></div><div class="sw" style="background:#F59E0B"></div><div class="sw" style="background:#06B6D4"></div></div><span class="tname">Corp Slate</span></button>
+            <button class="theme-opt" onclick="applyTheme('rose',this)"><div class="swatches"><div class="sw" style="background:#1C1C2E"></div><div class="sw" style="background:#E91E8C"></div><div class="sw" style="background:#FF6B35"></div></div><span class="tname">Bold Rose</span></button>
+            <button class="theme-opt" onclick="applyTheme('light',this)"><div class="swatches"><div class="sw" style="background:#EFF3FF"></div><div class="sw" style="background:#2563EB"></div><div class="sw" style="background:#059669"></div></div><span class="tname">Clean Light</span></button>
+          </div>
+        </div>
+
+        <div class="layout-sec">
+          <h4>Hero Layout</h4>
+          <div class="lopt-grid">
+            <button class="lopt on" onclick="setHeroLayout('split',this)">
+              <svg width="42" height="28" viewBox="0 0 42 28"><rect x="1" y="1" width="18" height="26" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="23" y="1" width="18" height="26" rx="2" fill="currentColor" opacity=".18" stroke="currentColor" stroke-width="1.5"/></svg>
+              <span>Split</span>
+            </button>
+            <button class="lopt" onclick="setHeroLayout('center',this)">
+              <svg width="42" height="28" viewBox="0 0 42 28"><rect x="1" y="1" width="40" height="26" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="8" y="7" width="26" height="3" rx="1" fill="currentColor" opacity=".4"/><rect x="11" y="13" width="20" height="2" rx="1" fill="currentColor" opacity=".3"/><rect x="13" y="18" width="16" height="5" rx="2" fill="currentColor" opacity=".5"/></svg>
+              <span>Centered</span>
+            </button>
+            <button class="lopt" onclick="setHeroLayout('fullbg',this)">
+              <svg width="42" height="28" viewBox="0 0 42 28"><rect x="1" y="1" width="40" height="26" rx="2" fill="currentColor" opacity=".12" stroke="currentColor" stroke-width="1.5"/><rect x="4" y="9" width="20" height="3" rx="1" fill="currentColor" opacity=".5"/><rect x="4" y="15" width="14" height="2" rx="1" fill="currentColor" opacity=".4"/></svg>
+              <span>Full BG</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="layout-sec">
+          <h4>Pricing Cards</h4>
+          <div class="lopt-grid">
+            <button class="lopt on" onclick="setPricing('3col',this)">
+              <svg width="42" height="28" viewBox="0 0 42 28"><rect x="1" y="4" width="11" height="20" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="16" y="1" width="11" height="26" rx="1.5" fill="currentColor" opacity=".18" stroke="currentColor" stroke-width="1.5"/><rect x="31" y="4" width="11" height="20" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+              <span>3 Column</span>
+            </button>
+            <button class="lopt" onclick="setPricing('2col',this)">
+              <svg width="42" height="28" viewBox="0 0 42 28"><rect x="1" y="3" width="18" height="22" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="23" y="3" width="18" height="22" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+              <span>2 Column</span>
+            </button>
+            <button class="lopt" onclick="setPricing('stack',this)">
+              <svg width="42" height="28" viewBox="0 0 42 28"><rect x="6" y="1" width="30" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="6" y="11" width="30" height="7" rx="1.5" fill="currentColor" opacity=".18" stroke="currentColor" stroke-width="1.5"/><rect x="6" y="21" width="30" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+              <span>Stacked</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="layout-sec">
+          <h4>Spacing &amp; Scale</h4>
+          <div class="tok-row"><label>Section padding</label><input type="range" min="2" max="9" value="5" step=".5" oninput="tokPad(this)"><span id="v-pad">5rem</span></div>
+          <div class="tok-row"><label>Card radius</label><input type="range" min="0" max="28" value="12" oninput="tokR(this)"><span id="v-r">12px</span></div>
+          <div class="tok-row"><label>Max width</label><input type="range" min="840" max="1400" value="1120" step="20" oninput="tokMax(this)"><span id="v-max">1120px</span></div>
+        </div>
+
+      </div>
+    </div>
+
+  </div><!-- ep-body -->
+
+  <div class="ep-foot">
+    <button class="ep-export" id="export-btn" onclick="doExport()">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+      Export HTML
+    </button>
+    <button class="ep-reset" onclick="doReset()">↺ Reset all changes</button>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<!-- ═══════════════════════════════════════════════════
+     PAGE CONTENT  (id="page-content" — exported)
+     ═══════════════════════════════════════════════════ -->
+<div id="page-content">
+
+<nav>
+  <div class="nav-i">
+    <div class="nav-logo">Offshore<span>CompanyCorp</span></div>
+    <div class="nav-links">
+      <a href="#">Incorporation</a>
+      <a href="#">Accounting &amp; Tax</a>
+      <a href="#">Banking</a>
+      <a href="#">Resources</a>
+    </div>
+    <a href="#contact" class="nav-cta">Get Free Consultation</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero has-bg" data-sid="hero">
+  <div class="s-bg" id="sbg-hero"></div>
+  <button class="edit-handle" onclick="openBgFor('hero')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg> BG</button>
+  <div class="hero-layout">
+    <div class="hero-left">
+      <div class="hero-badge">Hong Kong Compliance</div>
+      <h1>Annual Compliance,<br><em>Handled End-to-End</em></h1>
+      <p class="hero-sub">From bookkeeping to BIR51 filing — your Hong Kong company stays audit-ready and penalty-free, every year.</p>
+      <div class="hero-tabs">
+        <button class="hero-tab on">✦ Already have a HK company</button>
+        <button class="hero-tab">Setting up a new company</button>
+      </div>
+      <div class="hero-ctas">
+        <a href="#pricing" class="btn-p">See Packages &amp; Pricing →</a>
+        <a href="#contact" class="btn-g">Talk to an advisor</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-i"><strong>30+</strong> jurisdictions served</div>
+        <div class="trust-i"><strong>500+</strong> HK companies managed</div>
+        <div class="trust-i"><strong>CPA-certified</strong> team</div>
+        <div class="trust-i">⭐⭐⭐⭐⭐ Rated 4.8/5</div>
+      </div>
+    </div>
+    <div class="hero-img-wrap">
+      <div class="img-slot" id="slot-hero" style="height:420px;border-radius:var(--rl)">
+        <img id="img-hero" src="" alt="HK skyline">
+        <div class="img-slot-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>Hero image<br><small style="opacity:.7">1200×800px</small></div>
+      </div>
+      <div class="hero-stat"><div class="sn">500+</div><div class="sl">HK companies compliant</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO -->
+<section class="who rev has-bg" data-sid="who">
+  <div class="s-bg" id="sbg-who"></div>
+  <button class="edit-handle" onclick="openBgFor('who')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg> BG</button>
+  <div class="si">
+    <div class="split">
+      <div>
+        <span class="slabel">Who we serve</span>
+        <h2 class="stitle">Is this right for your situation?</h2>
+        <p class="ssub">We work best with companies that have real operations — not just a registration certificate.</p>
+        <div class="who-grid">
+          <div class="wcard"><div class="wi">🏢</div><h3>Active HK company with real transactions</h3><p>You have a company generating revenue, paying suppliers, or managing payroll — and need annual bookkeeping, audit, and tax filing handled properly.</p></div>
+          <div class="wcard"><div class="wi">🌍</div><h3>Foreign holding company in HK</h3><p>You incorporated in HK for banking access or international structure, and need compliance handled by someone who understands cross-border context.</p></div>
+          <div class="wcard"><div class="wi">🏦</div><h3>Preparing for banking or fundraising</h3><p>Your bank or investors require audited financial statements. We prepare audit-ready accounts with documentation that meets institutional standards.</p></div>
+          <div class="wcard"><div class="wi">📋</div><h3>Company with backlog or incomplete records</h3><p>Started late on bookkeeping? We handle historical catch-up and bring records up to date before the filing deadline.</p></div>
+        </div>
+        <div class="who-not" style="font-size:.875rem"><strong>Not quite right?</strong> If your company was incorporated this year with zero transactions, our <a href="#pricing" style="color:#92400E;font-weight:700">Starter plan</a> covers dormant compliance at minimal cost. Or <a href="#contact" style="color:#92400E;font-weight:700">chat with us</a>.</div>
+      </div>
+      <div class="simg">
+        <div class="img-slot" id="slot-who" style="height:380px">
+          <img id="img-who" src="" alt="Team">
+          <div class="img-slot-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>Side image<br><small style="opacity:.7">800×700px</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INCLUDED -->
+<section class="included rev has-bg" data-sid="included">
+  <div class="s-bg" id="sbg-included"></div>
+  <button class="edit-handle" onclick="openBgFor('included')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg> BG</button>
+  <div class="si">
+    <span class="slabel" style="color:var(--gold-l)">What's covered</span>
+    <h2 class="stitle">Every filing your HK company needs</h2>
+    <p class="ssub">All mandatory submissions to Inland Revenue Department and Companies Registry — by name, not vague categories.</p>
+    <table class="stbl">
+      <thead><tr><th>Filing / Service</th><th>Authority</th><th>Frequency</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>Bookkeeping &amp; Financial Statements</td><td>Internal / IRD</td><td>Annual</td><td><span class="br">Mandatory</span></td></tr>
+        <tr><td>Statutory Audit</td><td>IRD / HKICPA</td><td>Annual</td><td><span class="br">Mandatory — all HK cos</span></td></tr>
+        <tr><td>Profits Tax Return (BIR51)</td><td>Inland Revenue Dept</td><td>Annual</td><td><span class="br">Mandatory</span></td></tr>
+        <tr><td>Employer's Return (IR56A / IR56B)</td><td>Inland Revenue Dept</td><td>Annual (April)</td><td><span class="br">If has employees</span></td></tr>
+        <tr><td>Annual Return</td><td>Companies Registry</td><td>Annual</td><td><span class="br">Mandatory</span></td></tr>
+        <tr><td>Review Financial Statements</td><td>Internal advisory</td><td>As needed</td><td><span class="bo">Add-on $250</span></td></tr>
+        <tr><td>Historical Accounting Catch-up</td><td>—</td><td>As needed</td><td><span class="bo">Add-on available</span></td></tr>
+      </tbody>
+    </table>
+    <p class="audit-note">⚠ Unlike Singapore, Hong Kong has NO audit-exempt category — all registered companies must undergo statutory audit annually, regardless of size or revenue.</p>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing rev has-bg" id="pricing" data-sid="pricing">
+  <div class="s-bg" id="sbg-pricing"></div>
+  <button class="edit-handle" onclick="openBgFor('pricing')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg> BG</button>
+  <div class="si">
+    <span class="slabel">Transparent pricing</span>
+    <h2 class="stitle">Three packages, one clear price</h2>
+    <p class="ssub">Prices scale with your annual transaction volume and revenue. We confirm your exact quote before any work begins.</p>
+    <div class="pdiscl"><span style="font-size:1.1rem;flex-shrink:0">ℹ️</span><div><strong>Revenue &amp; transaction-adjusted pricing:</strong> The figures below are starting prices. Your exact annual fee depends on transaction volume and revenue. Annual Return is handled by our Renewal team and quoted separately (~$1,308/yr).</div></div>
+    <div class="pgrid" id="pgrid">
+      <div class="pcard">
+        <div class="pname">Starter</div><div class="ptitle">Foundation</div>
+        <p class="pdesc">Newly incorporated or dormant company. Minimum compliance. Annual Return billed separately.</p>
+        <div><span class="pfrom">From</span><div class="prow"><span class="amt">$950</span><span class="per">/ year</span></div></div>
+        <div class="phkd">≈ HK$7,400 and up</div>
+        <div class="ptier">📄 Below 30 transactions / year</div>
+        <hr class="pdiv">
+        <ul class="pfeats">
+          <li class="inc"><span class="ck">✓</span> Bookkeeping &amp; Financial Statements</li>
+          <li class="inc"><span class="ck">✓</span> Profits Tax Return (BIR51)</li>
+        </ul>
+        <div class="pcard-addons">
+          <div class="pcard-addons-label">Available add-ons</div>
+          <div class="pcard-addons-list">Annual Return · Statutory Audit · Employer's Return · Review Financial Statements</div>
+        </div>
+        <button class="pbtn">Get Started</button>
+      </div>
+      <div class="pcard feat">
+        <div class="pbadge">Most Popular</div>
+        <div class="pname">Growth</div><div class="ptitle">Active Business</div>
+        <p class="pdesc">Active company with real revenue and employees. Includes Employer's Return. Built for growing SMEs.</p>
+        <div><span class="pfrom">From</span><div class="prow"><span class="amt">$1,400</span><span class="per">/ year</span></div></div>
+        <div class="phkd">≈ HK$10,900 and up</div>
+        <div class="ptier">📊 30–59 transactions · up to HK$750k revenue</div>
+        <hr class="pdiv">
+        <ul class="pfeats">
+          <li class="inc"><span class="ck">✓</span> Bookkeeping &amp; Financial Statements</li>
+          <li class="inc"><span class="ck">✓</span> Profits Tax Return (BIR51)</li>
+          <li class="inc"><span class="ck">✓</span> Employer's Return (IR56A/B)</li>
+        </ul>
+        <div class="pcard-addons">
+          <div class="pcard-addons-label">Available add-ons</div>
+          <div class="pcard-addons-list">Annual Return · Statutory Audit · Review Financial Statements</div>
+        </div>
+        <button class="pbtn fb">Get Started</button>
+      </div>
+      <div class="pcard">
+        <div class="pname">Full Compliance</div><div class="ptitle">Audit-Ready</div>
+        <p class="pdesc">Full package including statutory audit. Required for banking, fundraising, or investor reporting.</p>
+        <div><span class="pfrom">From</span><div class="prow"><span class="amt">$2,352</span><span class="per">/ year</span></div></div>
+        <div class="phkd">≈ HK$18,400 and up</div>
+        <div class="ptier">📈 Revenue &lt; USD 64,500 (~HK$503k)</div>
+        <hr class="pdiv">
+        <ul class="pfeats">
+          <li class="inc"><span class="ck">✓</span> Bookkeeping &amp; Financial Statements</li>
+          <li class="inc"><span class="ck">✓</span> Statutory Audit (HK SME-FRS)</li>
+          <li class="inc"><span class="ck">✓</span> Profits Tax Return (BIR51)</li>
+          <li class="inc"><span class="ck">✓</span> Employer's Return (IR56A/B)</li>
+        </ul>
+        <div class="pcard-addons">
+          <div class="pcard-addons-label">Available add-ons</div>
+          <div class="pcard-addons-list">Annual Return · Review Financial Statements</div>
+        </div>
+        <button class="pbtn">Get Started</button>
+      </div>
+    </div>
+    <div class="pnote"><strong>How pricing works:</strong> Bookkeeping fees scale with annual transaction count. Audit fees scale with annual revenue in USD. The "from" price shown uses the lowest applicable tier. We confirm your exact quote upfront — before any work begins.</div>
+
+    <!-- Merged accordion: Audit tiers + Add-ons -->
+    <div class="acc-block" id="pricing-acc">
+      <button class="acc-trigger" onclick="toggleAcc()">
+        <div class="acc-trigger-left">
+          <div>
+            <div class="acc-trigger-title">Audit pricing tiers &amp; add-on services</div>
+            <div class="acc-trigger-sub">Statutory audit rates by revenue · Add-ons quoted separately</div>
+          </div>
+          <span class="acc-badge">Mandatory for ALL HK companies</span>
+        </div>
+        <span class="acc-chevron">▾</span>
+      </button>
+      <div class="acc-body">
+        <div class="rev-slider-wrap">
+          <div class="rev-slider-top">
+            <div class="rev-slider-left">
+              <div class="rev-slider-label">Annual revenue</div>
+              <div class="rev-display"><span id="rev-val">$50,000</span></div>
+              <div class="rev-display-sub" id="rev-hkd">≈ HK$390,000</div>
+            </div>
+            <div class="rev-result">
+              <div class="rev-result-label">Estimated audit fee</div>
+              <div class="rev-price" id="rev-price">from $1,221</div>
+              <div class="rev-price-sub" id="rev-tier-label">Revenue &lt; USD 64,500</div>
+            </div>
+          </div>
+          <div class="rev-range-wrap">
+            <input type="range" class="rev-range" id="rev-slider"
+              min="0" max="7" step="1" value="0"
+              oninput="updateRevSlider(this)">
+            <div class="rev-ticks">
+              <span class="rev-tick">$0</span>
+              <span class="rev-tick">$64k</span>
+              <span class="rev-tick">$96k</span>
+              <span class="rev-tick">$128k</span>
+              <span class="rev-tick">$192k</span>
+              <span class="rev-tick">$384k</span>
+              <span class="rev-tick">$641k</span>
+              <span class="rev-tick">$641k+</span>
+            </div>
+            <div class="rev-tier-bar" id="rev-tier-bar">
+              <div class="rev-tier-seg active" id="rseg-0"></div>
+              <div class="rev-tier-seg" id="rseg-1"></div>
+              <div class="rev-tier-seg" id="rseg-2"></div>
+              <div class="rev-tier-seg" id="rseg-3"></div>
+              <div class="rev-tier-seg" id="rseg-4"></div>
+              <div class="rev-tier-seg" id="rseg-5"></div>
+              <div class="rev-tier-seg" id="rseg-6"></div>
+            </div>
+          </div>
+        </div>
+        <div class="acc-addons">
+          <div class="acc-addons-title">Add-ons &amp; separate services</div>
+          <div class="acc-arow"><div><div class="acc-aname">Employer's Return (IR56A/B)</div></div><span class="acc-aprice">$260</span></div>
+          <div class="acc-arow"><div><div class="acc-aname">Review Financial Statements</div><div class="acc-anote">Client supplies prepared FS; we review and advise</div></div><span class="acc-aprice">$250</span></div>
+          <div class="acc-arow"><div><div class="acc-aname">Annual Return (Companies Registry)</div><div class="acc-anote">Renewal team — gov fee $529 + service $779</div></div><span class="acc-aprice">~$1,308/yr</span></div>
+          <div class="acc-arow"><div><div class="acc-aname">Historical accounting catch-up</div><div class="acc-anote">Priced by years and transaction volume</div></div><span class="acc-aprice">From $3,500/yr</span></div>
+          <div class="acc-arow"><div><div class="acc-aname">Urgency filing (deadline &lt; 2 months)</div></div><span class="acc-aprice ct">Contact us</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIALS -->
+<section class="credentials rev has-bg" data-sid="credentials">
+  <div class="s-bg" id="sbg-credentials"></div>
+  <button class="edit-handle" onclick="openBgFor('credentials')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg> BG</button>
+  <div class="si">
+    <div class="split rev">
+      <div>
+        <span class="slabel">Our credentials</span>
+        <h2 class="stitle">CPA-certified team. Compliance experts.</h2>
+        <div class="cgrid">
+          <div class="ccard"><div class="ci">🏅</div><div class="cn">CPA</div><div class="cl">Certified Public Accountants on team</div></div>
+          <div class="ccard"><div class="ci">📜</div><div class="cn">ACCA</div><div class="cl">Association of Chartered Certified Accountants</div></div>
+          <div class="ccard"><div class="ci">🏢</div><div class="cn">500+</div><div class="cl">HK companies under ongoing management</div></div>
+          <div class="ccard"><div class="ci">🌐</div><div class="cn">30+</div><div class="cl">Jurisdictions — multi-country compliance</div></div>
+        </div>
+      </div>
+      <div class="simg">
+        <div class="img-slot" id="slot-credentials" style="height:320px">
+          <img id="img-credentials" src="" alt="Credentials">
+          <div class="img-slot-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>Side image<br><small style="opacity:.7">700×500px</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process rev has-bg" data-sid="process">
+  <div class="s-bg" id="sbg-process"></div>
+  <button class="edit-handle" onclick="openBgFor('process')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg> BG</button>
+  <div class="si">
+    <span class="slabel">How it works</span>
+    <h2 class="stitle">From onboarding to filed — in weeks</h2>
+    <p class="ssub">A clear, structured process so you always know where things stand.</p>
+    <div class="pgrd">
+      <div class="pstep"><div class="snum">1</div><h3>Submit your documents</h3><p>Share bank statements, invoices, and company details via our secure portal or email.</p></div>
+      <div class="pstep"><div class="snum">2</div><h3>We prepare your accounts</h3><p>Our CPA team reconciles transactions, prepares financial statements, and handles Profits Tax computation.</p></div>
+      <div class="pstep"><div class="snum">3</div><h3>Audit &amp; review</h3><p>Statutory audit conducted by certified auditor. You review and approve final financial statements.</p></div>
+      <div class="pstep"><div class="snum">4</div><h3>Filing &amp; confirmation</h3><p>BIR51, Employer's Return, and Annual Return submitted to IRD and Companies Registry.</p></div>
+    </div>
+    <div class="psla">
+      <span class="psla-i">✦ Accounts ready within 4–6 weeks</span>
+      <span class="psla-i">✦ Dedicated advisor via chat &amp; email</span>
+      <span class="psla-i">✦ 100% remote — no office visit needed</span>
+    </div>
+    <div style="margin-top:3rem">
+      <div class="img-slot" id="slot-process" style="height:220px">
+        <img id="img-process" src="" alt="Process">
+        <div class="img-slot-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>Banner image · 1120×380px</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews rev has-bg" data-sid="reviews">
+  <div class="s-bg" id="sbg-reviews"></div>
+  <button class="edit-handle" onclick="openBgFor('reviews')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg> BG</button>
+  <div class="si">
+    <span class="slabel">Client reviews</span>
+    <h2 class="stitle">What our clients say</h2>
+    <div class="rgrid">
+      <div class="rcard"><div class="stars">★★★★★</div><p class="rtext">"We had a backlog of two years of unfiled accounts. The team handled everything — historical catch-up, audit, and BIR51 — within 6 weeks. Saved us from significant penalties."</p><div class="rauth">— E-commerce company, HK (Singapore-based founders)</div></div>
+      <div class="rcard"><div class="stars">★★★★★</div><p class="rtext">"Our bank required audited financials before upgrading our account. One IBC handled the audit and all filings — the bank accepted the documents without pushback."</p><div class="rauth">— Trading company, HK (UK-based director)</div></div>
+      <div class="rcard"><div class="stars">★★★★★</div><p class="rtext">"Running a holding structure across HK and Vietnam. Having one team that understands both jurisdictions is invaluable — no more coordinating between separate accountants."</p><div class="rauth">— Holding company, HK + Vietnam operations</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq rev has-bg" data-sid="faq">
+  <div class="s-bg" id="sbg-faq"></div>
+  <button class="edit-handle" onclick="openBgFor('faq')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg> BG</button>
+  <div class="si">
+    <div class="flayout">
+      <div>
+        <span class="slabel">FAQ</span>
+        <h2 class="stitle">Common questions</h2>
+        <div style="margin-top:2rem">
+          <div class="fitem"><button class="fq" onclick="faqT(this)">Is statutory audit mandatory for all Hong Kong companies?<span class="ficon">+</span></button><div class="fa">Yes — unlike Singapore, Hong Kong has no audit-exempt category. Every registered company, regardless of size or revenue, must have its accounts audited by a certified independent auditor and submit audited financial statements with the Profits Tax Return annually.</div></div>
+          <div class="fitem"><button class="fq" onclick="faqT(this)">What is the BIR51 deadline and what happens if I miss it?<span class="ficon">+</span></button><div class="fa">The first BIR51 is issued 18 months after incorporation, with 3 months to file. Subsequently, filing deadlines depend on your accounting year-end date. Missing deadlines results in fines from HKD 1,200 to HKD 10,000 and potential prosecution.</div></div>
+          <div class="fitem"><button class="fq" onclick="faqT(this)">How exactly is my price calculated?<span class="ficon">+</span></button><div class="fa">Your fee has two components: (1) Bookkeeping, priced by annual transaction count — from $950 for under 30 transactions, scaling in bands up to 450+. (2) Statutory Audit, priced by annual revenue in USD — from $1,221. We confirm your exact total before work begins.</div></div>
+          <div class="fitem"><button class="fq" onclick="faqT(this)">My company has incomplete bookkeeping from prior years — can you help?<span class="ficon">+</span></button><div class="fa">Yes. We offer historical accounting catch-up as an add-on. We reconcile bank statements and reconstruct financial records before proceeding to audit and filing.</div></div>
+          <div class="fitem"><button class="fq" onclick="faqT(this)">My company also operates in Vietnam / Singapore — can One IBC handle both?<span class="ficon">+</span></button><div class="fa">Yes — we serve 30+ jurisdictions including Singapore, Vietnam, UK, and the US. Multi-entity structures can be managed from a single point of contact.</div></div>
+          <div class="fitem"><button class="fq" onclick="faqT(this)">How is your pricing different from Osome or other providers?<span class="ficon">+</span></button><div class="fa">Osome is software-first, for startups under HKD 200k revenue. Our service is human-advisory-led, designed for active SMEs with real operations, cross-border structures, or pre-banking/fundraising needs.</div></div>
+          <div class="fitem"><button class="fq" onclick="faqT(this)">What documents do I need to get started?<span class="ficon">+</span></button><div class="fa">Bank statements for the full financial year, invoices and receipts, payroll records if you have employees, and incorporation documents. We accept physical copies, digital files, or scanned documents.</div></div>
+        </div>
+      </div>
+      <div class="faq-img">
+        <div class="img-slot" id="slot-faq" style="height:420px">
+          <img id="img-faq" src="" alt="FAQ">
+          <div class="img-slot-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>Sidebar image<br><small style="opacity:.7">700×700px</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta has-bg" id="contact" data-sid="cta">
+  <div class="s-bg" id="sbg-cta"></div>
+  <button class="edit-handle" onclick="openBgFor('cta')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg> BG</button>
+  <div class="cta-in">
+    <h2>Ready to get your HK company fully compliant?</h2>
+    <p>Tell us about your company — we'll respond within 24 hours with the right package and exact cost.</p>
+    <div class="cform">
+      <div class="fgrid">
+        <div class="ff"><label>Full name</label><input type="text" placeholder="Your name" autocomplete="name"></div>
+        <div class="ff"><label>Email</label><input type="email" placeholder="your@email.com" autocomplete="email"></div>
+        <div class="ff"><label>WhatsApp</label><input type="tel" placeholder="+852 / +84 / +65..." autocomplete="tel"></div>
+        <div class="ff"><label>Annual revenue (approx)</label>
+          <select><option value="">Select range</option><option>No revenue / Dormant</option><option>Below HK$500,000</option><option>HK$500k – HK$1M</option><option>HK$1M – HK$5M</option><option>Above HK$5M</option></select>
+        </div>
+        <div class="ff full"><label>Other jurisdictions needed?</label>
+          <select><option value="">Select (optional)</option><option>No — HK only</option><option>Yes — Singapore</option><option>Yes — Vietnam</option><option>Yes — UK / US</option><option>Yes — Multiple jurisdictions</option></select>
+        </div>
+      </div>
+      <button class="btn-p" style="width:100%;margin-top:.5rem;font-size:.975rem;justify-content:center">Get My Compliance Plan →</button>
+      <div class="tbadges"><span class="tbadge">🔒 No obligation</span><span class="tbadge">⚡ Reply within 24h</span><span class="tbadge">🔐 100% confidential</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 OffshoreCompanyCorp. All rights reserved. &nbsp;|&nbsp; <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms</a></p>
+  <p style="margin-top:.5rem">TC006825 · Certified Public Accountants · ACCA</p>
+</footer>
+
+<div class="sbar">
+  <span class="sbar-t">🇭🇰 HK Annual Compliance — <strong>from $950/year</strong> · audit pricing by revenue</span>
+  <a href="#contact" class="btn-p" style="padding:.55rem 1.4rem;font-size:.85rem">Get Free Consultation</a>
+</div>
+
+</div><!-- #page-content -->
+
+<!-- ═══════════════════════════════════════════════════
+     PAGE FUNCTIONS — global scope, outside IIFE
+     ═══════════════════════════════════════════════════ -->
+<script>
+function toggleAcc(){
+  var b=document.getElementById('pricing-acc');
+  if(!b) return;
+  b.classList.toggle('open');
+  // Init slider when accordion opens
+  if(b.classList.contains('open')){
+    var sl=document.getElementById('rev-slider');
+    if(sl) updateRevSlider(sl);
+  }
+}
+function faqT(btn){
+  var item=btn.closest('.fitem'),isOpen=item.classList.contains('open');
+  document.querySelectorAll('.fitem').forEach(function(i){i.classList.remove('open');i.querySelector('.ficon').textContent='+'});
+  if(!isOpen){item.classList.add('open');btn.querySelector('.ficon').textContent='×'}
+}
+
+/* Revenue slider logic */
+var REV_TIERS=[
+  {label:'Revenue < USD 64,500',      price:'from $1,221'},
+  {label:'USD 64,500 – 96,000',       price:'from $1,391'},
+  {label:'USD 96,000 – 128,000',      price:'from $1,664'},
+  {label:'USD 128,000 – 192,000',     price:'from $2,100'},
+  {label:'USD 192,000 – 384,000',     price:'from $2,730'},
+  {label:'USD 384,000 – 641,000',     price:'from $3,549'},
+  {label:'Above USD 641,000',         price:'Contact us'},
+];
+var REV_DISPLAY=['$50,000','$64,500','$96,000','$128,000','$192,000','$384,000','$641,000','$700,000+'];
+var REV_HKD=['≈ HK$390k','≈ HK$503k','≈ HK$748k','≈ HK$998k','≈ HK$1.5M','≈ HK$3.0M','≈ HK$5.0M','Above HK$5M'];
+
+function updateRevSlider(el){
+  var v=parseInt(el.value,10);
+  var tierIdx=Math.min(v,6);
+  var t=REV_TIERS[tierIdx];
+
+  // Text updates
+  var valEl=document.getElementById('rev-val');
+  var hkdEl=document.getElementById('rev-hkd');
+  var priceEl=document.getElementById('rev-price');
+  var tierEl=document.getElementById('rev-tier-label');
+  if(valEl) valEl.textContent=REV_DISPLAY[v];
+  if(hkdEl) hkdEl.textContent=REV_HKD[v];
+  if(priceEl){ priceEl.textContent=t.price; priceEl.style.color=t.price==='Contact us'?'#C8860A':'#0B7A75'; }
+  if(tierEl) tierEl.textContent=t.label;
+
+  // Track fill — set background directly on element (works in all sandboxes)
+  var pct=Math.round((v/7)*100);
+  el.style.background='linear-gradient(to right,#0B7A75 '+pct+'%,#E5E7EB '+pct+'%)';
+
+  // Segment bar
+  for(var i=0;i<7;i++){
+    var seg=document.getElementById('rseg-'+i);
+    if(seg) seg.style.background=i<=tierIdx?'#0B7A75':'#E5E7EB';
+  }
+}
+
+// Init on DOMContentLoaded (also handles case where acc is open by default)
+document.addEventListener('DOMContentLoaded',function(){
+  var sl=document.getElementById('rev-slider');
+  if(sl) updateRevSlider(sl);
+  document.querySelectorAll('.hero-tab').forEach(function(t){
+    t.addEventListener('click',function(){
+      document.querySelectorAll('.hero-tab').forEach(function(x){x.classList.remove('on')});
+      t.classList.add('on');
+    });
+  });
+  var ro=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('vis');ro.unobserve(x.target)}})},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rev').forEach(function(el){ro.observe(el)});
+});
+</script>
+
+<!-- ═══════════════════════════════════════════════════
+     EDITOR JAVASCRIPT
+     ═══════════════════════════════════════════════════ -->
+<script>
+(function(){
+'use strict';
+
+/* ── State ── */
+const S = {
+  imgs: {},   // slotId → dataURL|URL
+  bgs: {},    // sectionId → {url, op, col, blur, pos}
+  activeBg: null,
+};
+
+/* ── Image slot configs ── */
+const IMG_SLOTS = [
+  {id:'hero',        label:'Hero',        type:'Right panel image', hint:'1200×800px'},
+  {id:'who',         label:'Who It\'s For',type:'Side image',        hint:'800×700px'},
+  {id:'credentials', label:'Credentials', type:'Side image',        hint:'700×500px'},
+  {id:'process',     label:'Process',     type:'Bottom banner',     hint:'1120×380px'},
+  {id:'faq',         label:'FAQ',         type:'Sticky sidebar',    hint:'700×700px'},
+];
+
+const BG_SECTIONS = [
+  {id:'hero',        label:'Hero'},
+  {id:'who',         label:'Who It\'s For'},
+  {id:'included',    label:'Services Table'},
+  {id:'pricing',     label:'Pricing'},
+  {id:'credentials', label:'Credentials'},
+  {id:'process',     label:'Process'},
+  {id:'reviews',     label:'Reviews'},
+  {id:'faq',         label:'FAQ'},
+  {id:'cta',         label:'Contact Form'},
+];
+
+/* ── Panel toggle ── */
+window.edToggle = function(){
+  const panel = document.getElementById('ed-panel');
+  const btn   = document.getElementById('ed-btn');
+  const open  = panel.classList.toggle('open');
+  btn.classList.toggle('panel-open', open);
+  document.body.classList.toggle('ed-on', open);
+  if(open) buildImgTab();
+};
+
+/* ── Tab switch ── */
+window.epTab = function(btn){
+  document.querySelectorAll('.ep-tab').forEach(t => t.classList.remove('on'));
+  document.querySelectorAll('.ep-pane').forEach(p => p.classList.remove('on'));
+  btn.classList.add('on');
+  document.getElementById('pane-' + btn.dataset.tab).classList.add('on');
+  if(btn.dataset.tab === 'bg') buildBgSelect();
+};
+
+/* ════════════════════════════════
+   IMAGES TAB
+   ════════════════════════════════ */
+function buildImgTab(){
+  const pane = document.getElementById('pane-images');
+  if(pane.children.length) return;
+  IMG_SLOTS.forEach(sec => {
+    const row = document.createElement('div');
+    row.className = 'sec-row';
+    row.id = 'irow-' + sec.id;
+    const hasSrc = !!S.imgs[sec.id];
+    row.innerHTML = `
+      <div class="sec-thumb" id="ithumb-${sec.id}">
+        ${hasSrc ? `<img class="has" src="${S.imgs[sec.id]}" alt="">` : 'IMG'}
+      </div>
+      <div class="sec-info">
+        <div class="sec-name">${sec.label}</div>
+        <div class="sec-type">${sec.type} · ${sec.hint}</div>
+      </div>
+      <span class="sec-arrow">›</span>`;
+    row.onclick = () => toggleImgRow(sec.id);
+    pane.appendChild(row);
+
+    const body = document.createElement('div');
+    body.className = 'sec-body';
+    body.id = 'ibody-' + sec.id;
+    body.innerHTML = `
+      <div class="dzone" id="dz-${sec.id}"
+        ondragover="event.preventDefault();this.classList.add('dg')"
+        ondragleave="this.classList.remove('dg')"
+        ondrop="imgDrop(event,'${sec.id}')">
+        <input type="file" accept="image/*" onchange="imgFile(event,'${sec.id}')">
+        <div class="dzone-ico">📁</div>
+        <div class="dzone-t">Drop image or click to upload</div>
+      </div>
+      <div class="url-row">
+        <input type="text" class="url-inp" id="iurl-${sec.id}" placeholder="Or paste image URL…">
+        <button class="url-btn" onclick="imgUrl('${sec.id}')">Apply</button>
+      </div>
+      <div class="ep-prev" id="iprev-${sec.id}">
+        ${hasSrc
+          ? `<img src="${S.imgs[sec.id]}" alt=""><button class="ep-clr" onclick="imgClear('${sec.id}')">✕</button>`
+          : '<span class="ep-prev-txt">No image set</span>'}
+      </div>`;
+    pane.appendChild(body);
+  });
+}
+
+function toggleImgRow(id){
+  const row  = document.getElementById('irow-'  + id);
+  const body = document.getElementById('ibody-' + id);
+  const open = body.classList.toggle('on');
+  row.classList.toggle('open', open);
+}
+
+window.imgFile = function(e, id){
+  const f = e.target.files[0]; if(!f) return;
+  readFile(f, src => applyImg(id, src));
+};
+window.imgDrop = function(e, id){
+  e.preventDefault();
+  document.getElementById('dz-'+id)?.classList.remove('dg');
+  const f = e.dataTransfer.files[0];
+  if(f && f.type.startsWith('image/')) readFile(f, src => applyImg(id, src));
+};
+window.imgUrl = function(id){
+  const v = document.getElementById('iurl-'+id)?.value.trim();
+  if(v) applyImg(id, v);
+};
+window.imgClear = function(id){
+  delete S.imgs[id];
+  const img = document.getElementById('img-'+id);
+  if(img){ img.src=''; img.classList.remove('active'); }
+  restoreSlotLabel(id);
+  refreshImgUI(id, null);
+  toast('Image removed');
+};
+
+function applyImg(id, src){
+  S.imgs[id] = src;
+  const img = document.getElementById('img-'+id);
+  if(img){ img.src = src; img.classList.add('active'); }
+  // Hide label when img loads
+  if(img) img.onload = () => {
+    const slot = document.getElementById('slot-'+id);
+    if(slot){ slot.style.border='none'; slot.style.background='none'; }
+    const lbl = slot?.querySelector('.img-slot-label');
+    if(lbl) lbl.style.display='none';
+  };
+  refreshImgUI(id, src);
+  toast('Image applied ✓');
+}
+
+function refreshImgUI(id, src){
+  const thumb = document.getElementById('ithumb-'+id);
+  if(thumb) thumb.innerHTML = src
+    ? `<img class="has" src="${src}" alt="">`
+    : 'IMG';
+  const prev = document.getElementById('iprev-'+id);
+  if(prev) prev.innerHTML = src
+    ? `<img src="${src}" alt=""><button class="ep-clr" onclick="imgClear('${id}')">✕</button>`
+    : '<span class="ep-prev-txt">No image set</span>';
+}
+
+function restoreSlotLabel(id){
+  const slot = document.getElementById('slot-'+id);
+  if(!slot) return;
+  slot.style.border = '';
+  slot.style.background = '';
+  const lbl = slot.querySelector('.img-slot-label');
+  if(lbl) lbl.style.display = '';
+}
+
+function readFile(f, cb){
+  const r = new FileReader();
+  r.onload = e => cb(e.target.result);
+  r.readAsDataURL(f);
+}
+
+/* ════════════════════════════════
+   BACKGROUNDS TAB
+   ════════════════════════════════ */
+function buildBgSelect(){
+  const sel = document.getElementById('bg-sel');
+  if(sel.options.length) return;
+  BG_SECTIONS.forEach(s => {
+    const o = document.createElement('option');
+    o.value = s.id; o.textContent = s.label;
+    sel.appendChild(o);
+  });
+  refreshBgUI();
+}
+
+window.bgSelChange = function(){ refreshBgUI(); };
+
+function refreshBgUI(){
+  const id    = document.getElementById('bg-sel')?.value;
+  if(!id) return;
+  S.activeBg  = id;
+  const st    = S.bgs[id] || {};
+  const prev  = document.getElementById('bg-prev');
+  if(prev) prev.innerHTML = st.url
+    ? `<img src="${st.url}" alt=""><button class="ep-clr" onclick="bgClear()">✕</button>`
+    : '<span class="ep-prev-txt">No background set</span>';
+  setVal('bg-op',   st.op  ?? 55);
+  setVal('bg-blur', st.blur ?? 0);
+  const col = document.getElementById('bg-col');
+  if(col) col.value = st.col || '#0D2545';
+  document.getElementById('bg-op-v').textContent   = (st.op   ?? 55) + '%';
+  document.getElementById('bg-blur-v').textContent = (st.blur ?? 0)  + 'px';
+}
+
+window.bgFile = function(e){
+  const f = e.target.files[0]; if(!f) return;
+  readFile(f, src => applyBg(src));
+};
+window.bgDrop = function(e){
+  e.preventDefault();
+  document.getElementById('bg-dz')?.classList.remove('dg');
+  const f = e.dataTransfer.files[0];
+  if(f && f.type.startsWith('image/')) readFile(f, src => applyBg(src));
+};
+window.bgApplyUrl = function(){
+  const v = document.getElementById('bg-url')?.value.trim();
+  if(v) applyBg(v);
+};
+window.bgClear = function(){
+  const id = S.activeBg; if(!id) return;
+  delete S.bgs[id];
+  renderBg(id);
+  refreshBgUI();
+  toast('Background removed');
+};
+window.bgRender = function(){
+  const id = S.activeBg; if(!id) return;
+  if(!S.bgs[id]) S.bgs[id] = {};
+  S.bgs[id].op   = +document.getElementById('bg-op').value;
+  S.bgs[id].col  = document.getElementById('bg-col').value;
+  S.bgs[id].blur = +document.getElementById('bg-blur').value;
+  document.getElementById('bg-op-v').textContent   = S.bgs[id].op   + '%';
+  document.getElementById('bg-blur-v').textContent = S.bgs[id].blur + 'px';
+  renderBg(id);
+};
+window.bgPreset = function(col, el){
+  document.querySelectorAll('.preset').forEach(p => p.classList.remove('on'));
+  el.classList.add('on');
+  const c = document.getElementById('bg-col');
+  if(c){ c.value = col; bgRender(); }
+};
+window.bgPos = function(pos, btn){
+  document.querySelectorAll('.pos-btn').forEach(b => b.classList.remove('on'));
+  btn.classList.add('on');
+  const id = S.activeBg; if(!id) return;
+  if(!S.bgs[id]) S.bgs[id] = {};
+  S.bgs[id].pos = pos;
+  renderBg(id);
+};
+
+function applyBg(url){
+  const id = S.activeBg; if(!id) return;
+  S.bgs[id] = S.bgs[id] || {};
+  S.bgs[id].url  = url;
+  S.bgs[id].op   = S.bgs[id].op   ?? 55;
+  S.bgs[id].col  = S.bgs[id].col  || '#0D2545';
+  S.bgs[id].blur = S.bgs[id].blur ?? 0;
+  S.bgs[id].pos  = S.bgs[id].pos  || 'center';
+  renderBg(id);
+  const prev = document.getElementById('bg-prev');
+  if(prev) prev.innerHTML = `<img src="${url}" alt=""><button class="ep-clr" onclick="bgClear()">✕</button>`;
+  toast('Background applied ✓');
+}
+
+function renderBg(id){
+  const el = document.getElementById('sbg-'+id);
+  if(!el) return;
+  const st = S.bgs[id];
+  if(!st || !st.url){ el.style.cssText = ''; return; }
+  const rgba = hexRgba(st.col || '#0D2545', (st.op ?? 55) / 100);
+  el.style.backgroundImage    = `linear-gradient(${rgba},${rgba}),url('${st.url}')`;
+  el.style.backgroundSize     = 'cover';
+  el.style.backgroundPosition = st.pos || 'center';
+  el.style.filter             = st.blur ? `blur(${st.blur}px)` : '';
+}
+
+function hexRgba(hex, a){
+  const n = hex.replace('#','');
+  const r = parseInt(n.slice(0,2),16);
+  const g = parseInt(n.slice(2,4),16);
+  const b = parseInt(n.slice(4,6),16);
+  return `rgba(${r},${g},${b},${a.toFixed(2)})`;
+}
+
+/* ════════════════════════════════
+   OPEN BG EDITOR FOR SECTION
+   (called from edit handles on sections)
+   ════════════════════════════════ */
+window.openBgFor = function(id){
+  const panel = document.getElementById('ed-panel');
+  const btn   = document.getElementById('ed-btn');
+  panel.classList.add('open');
+  btn.classList.add('panel-open');
+  document.body.classList.add('ed-on');
+  buildImgTab();
+  // Switch to bg tab
+  document.querySelectorAll('.ep-tab').forEach(t => t.classList.remove('on'));
+  document.querySelectorAll('.ep-pane').forEach(p => p.classList.remove('on'));
+  document.querySelector('[data-tab="bg"]').classList.add('on');
+  document.getElementById('pane-bg').classList.add('on');
+  buildBgSelect();
+  const sel = document.getElementById('bg-sel');
+  if(sel){ sel.value = id; }
+  S.activeBg = id;
+  refreshBgUI();
+};
+
+/* ════════════════════════════════
+   LAYOUT TAB
+   ════════════════════════════════ */
+const THEMES = {
+  classic:  {navy:'#0D2545',navy2:'#163361',navy3:'#0A1E38',gold:'#C8860A','gold-l':'#F5A623',teal:'#0B7A75','teal-l':'#E6F5F4',cream:'#FAFAF7'},
+  midnight: {navy:'#0F0F23',navy2:'#1A1A3E',navy3:'#080816',gold:'#6C63FF','gold-l':'#8B85FF',teal:'#00D4AA','teal-l':'#E0FDF4',cream:'#F8F8FF'},
+  forest:   {navy:'#1A2E1A',navy2:'#243824',navy3:'#111C11',gold:'#4CAF50','gold-l':'#8BC34A',teal:'#2E7D32','teal-l':'#E8F5E9',cream:'#F9FBF9'},
+  slate:    {navy:'#1E293B',navy2:'#334155',navy3:'#0F172A',gold:'#F59E0B','gold-l':'#FCD34D',teal:'#06B6D4','teal-l':'#E0F7FA',cream:'#F8FAFC'},
+  rose:     {navy:'#1C1C2E',navy2:'#2A2A45',navy3:'#12121E',gold:'#E91E8C','gold-l':'#FF6B35',teal:'#9C27B0','teal-l':'#FCE4EC',cream:'#FFF8FB'},
+  light:    {navy:'#1E3A5F',navy2:'#2563EB',navy3:'#0F2340',gold:'#2563EB','gold-l':'#3B82F6',teal:'#059669','teal-l':'#ECFDF5',cream:'#F8F9FA'},
+};
+
+window.applyTheme = function(name, btn){
+  document.querySelectorAll('.theme-opt').forEach(b => b.classList.remove('on'));
+  btn.classList.add('on');
+  const t = THEMES[name]; if(!t) return;
+  const r = document.documentElement;
+  Object.entries(t).forEach(([k,v]) => r.style.setProperty('--'+k, v));
+  toast(`Theme "${name}" applied ✓`);
+};
+
+window.setHeroLayout = function(mode, btn){
+  document.querySelectorAll('[onclick^="setHeroLayout"]').forEach(b => b.classList.remove('on'));
+  btn.classList.add('on');
+  const layout  = document.querySelector('.hero-layout');
+  const imgWrap = document.querySelector('.hero-img-wrap');
+  if(!layout) return;
+  if(mode === 'split'){
+    layout.style.gridTemplateColumns = '1fr 420px';
+    if(imgWrap) imgWrap.style.display = '';
+  } else if(mode === 'center'){
+    layout.style.gridTemplateColumns = '1fr';
+    if(imgWrap) imgWrap.style.display = 'none';
+    layout.style.textAlign = 'center';
+  } else if(mode === 'fullbg'){
+    layout.style.gridTemplateColumns = '1fr';
+    if(imgWrap) imgWrap.style.display = 'none';
+    layout.style.textAlign = '';
+  }
+};
+
+window.setPricing = function(mode, btn){
+  document.querySelectorAll('[onclick^="setPricing"]').forEach(b => b.classList.remove('on'));
+  btn.classList.add('on');
+  const g = document.getElementById('pgrid'); if(!g) return;
+  const map = {'3col':'repeat(3,1fr)', '2col':'repeat(2,1fr)', 'stack':'1fr'};
+  g.style.gridTemplateColumns = map[mode] || 'repeat(3,1fr)';
+};
+
+window.tokPad = function(el){
+  document.getElementById('v-pad').textContent = el.value + 'rem';
+  document.querySelectorAll('section').forEach(s => {
+    s.style.paddingTop    = el.value + 'rem';
+    s.style.paddingBottom = el.value + 'rem';
+  });
+};
+window.tokR = function(el){
+  document.getElementById('v-r').textContent = el.value + 'px';
+  document.documentElement.style.setProperty('--r', el.value + 'px');
+};
+window.tokMax = function(el){
+  document.getElementById('v-max').textContent = el.value + 'px';
+  document.documentElement.style.setProperty('--max', el.value + 'px');
+};
+
+/* ════════════════════════════════
+   EXPORT HTML
+   ════════════════════════════════ */
+window.doExport = function(){
+  const btn = document.getElementById('export-btn');
+  btn.textContent = 'Exporting…';
+  btn.disabled = true;
+
+  setTimeout(() => {
+    try {
+      // 1. Collect computed CSS variable overrides
+      const cs  = getComputedStyle(document.documentElement);
+      const vars = ['--navy','--navy2','--navy3','--gold','--gold-l','--teal','--teal-l','--cream','--max','--r'];
+      let varCSS = ':root{';
+      vars.forEach(v => {
+        const val = cs.getPropertyValue(v).trim();
+        if(val) varCSS += v + ':' + val + ';';
+      });
+      varCSS += '}';
+
+      // 2. Collect section padding overrides
+      let sectionPad = '';
+      const firstSec = document.querySelector('#page-content section');
+      if(firstSec && firstSec.style.paddingTop){
+        sectionPad = 'section{padding:' + firstSec.style.paddingTop + ' 2rem;}';
+      }
+
+      // 3. Collect pricing grid override
+      let pgridCSS = '';
+      const pg = document.getElementById('pgrid');
+      if(pg && pg.style.gridTemplateColumns){
+        pgridCSS = '.pgrid{grid-template-columns:' + pg.style.gridTemplateColumns + ';}';
+      }
+
+      // 4. Collect hero layout override
+      let heroLayoutCSS = '';
+      const hl = document.querySelector('.hero-layout');
+      if(hl && hl.style.gridTemplateColumns){
+        heroLayoutCSS = '.hero-layout{grid-template-columns:' + hl.style.gridTemplateColumns + ';}';
+      }
+
+      // 5. Collect img srcs inline
+      const imgSrcMap = {};
+      IMG_SLOTS.forEach(sec => {
+        const el = document.getElementById('img-'+sec.id);
+        if(el && el.src && !el.src.endsWith(window.location.href) && el.src !== location.href){
+          imgSrcMap[sec.id] = el.src;
+        }
+      });
+
+      // 6. Collect BG inline styles
+      const bgStyleMap = {};
+      BG_SECTIONS.forEach(sec => {
+        const el = document.getElementById('sbg-'+sec.id);
+        if(el && el.style.backgroundImage){
+          bgStyleMap[sec.id] = el.getAttribute('style') || '';
+        }
+      });
+
+      // 7. Get page CSS text
+      const pageStylesEl = document.getElementById('page-styles');
+      let pageCSSText = pageStylesEl ? pageStylesEl.textContent : '';
+
+      // 8. Get page HTML
+      const pageContentEl = document.getElementById('page-content');
+      let pageHTML = pageContentEl ? pageContentEl.innerHTML : '';
+
+      // 9. Patch img srcs into HTML
+      Object.entries(imgSrcMap).forEach(([id, src]) => {
+        const escaped = src.replace(/\\/g,'\\\\').replace(/"/g,'\\"');
+        pageHTML = pageHTML.replace(
+          new RegExp(`id="img-${id}"\\s+src="[^"]*"`),
+          `id="img-${id}" src="${escaped}" class="active"`
+        );
+      });
+
+      // 10. Remove editor elements from page HTML
+      // Remove edit-handle buttons
+      pageHTML = pageHTML.replace(/<button[^>]*class="edit-handle"[^>]*>[\s\S]*?<\/button>/g, '');
+      // Remove s-bg inline style placeholders (keep the divs, just inline the styles)
+      Object.entries(bgStyleMap).forEach(([id, style]) => {
+        pageHTML = pageHTML.replace(
+          new RegExp(`id="sbg-${id}"`),
+          `id="sbg-${id}" style="${style.replace(/"/g,"'")}"`
+        );
+      });
+
+      // 11. Build final HTML
+      const finalHTML = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hong Kong Accounting &amp; Tax Compliance | OffshoreCompanyCorp</title>
+<meta name="description" content="Full-service HK annual compliance: bookkeeping, statutory audit, BIR51, Employer's Return. CPA-certified team. From $950/year.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+${pageCSSText}
+${varCSS}
+${sectionPad}
+${pgridCSS}
+${heroLayoutCSS}
+</style>
+</head>
+<body>
+${pageHTML}
+<script>
+// Accordion
+function toggleAcc(){var b=document.getElementById('pricing-acc');if(!b)return;b.classList.toggle('open');if(b.classList.contains('open')){var sl=document.getElementById('rev-slider');if(sl)updateRevSlider(sl)}}
+// FAQ accordion
+function faqT(btn){var i=btn.closest('.fitem'),o=i.classList.contains('open');document.querySelectorAll('.fitem').forEach(function(x){x.classList.remove('open');x.querySelector('.ficon').textContent='+'});if(!o){i.classList.add('open');btn.querySelector('.ficon').textContent='×'}}
+// Revenue slider
+var RT=[{label:'Revenue < USD 64,500',price:'from $1,221'},{label:'USD 64,500 – 96,000',price:'from $1,391'},{label:'USD 96,000 – 128,000',price:'from $1,664'},{label:'USD 128,000 – 192,000',price:'from $2,100'},{label:'USD 192,000 – 384,000',price:'from $2,730'},{label:'USD 384,000 – 641,000',price:'from $3,549'},{label:'Above USD 641,000',price:'Contact us'}];
+var RD=['$50,000','$64,500','$96,000','$128,000','$192,000','$384,000','$641,000','$700,000+'];
+var RH=['≈ HK$390k','≈ HK$503k','≈ HK$748k','≈ HK$998k','≈ HK$1.5M','≈ HK$3.0M','≈ HK$5.0M','Above HK$5M'];
+function updateRevSlider(el){var v=parseInt(el.value,10),ti=Math.min(v,6),t=RT[ti];var ve=document.getElementById('rev-val'),he=document.getElementById('rev-hkd'),pe=document.getElementById('rev-price'),te=document.getElementById('rev-tier-label');if(ve)ve.textContent=RD[v];if(he)he.textContent=RH[v];if(pe){pe.textContent=t.price;pe.style.color=t.price==='Contact us'?'#C8860A':'#0B7A75';}if(te)te.textContent=t.label;var pct=Math.round(v/7*100);el.style.background='linear-gradient(to right,#0B7A75 '+pct+'%,#E5E7EB '+pct+'%)';for(var i=0;i<7;i++){var s=document.getElementById('rseg-'+i);if(s)s.style.background=i<=ti?'#0B7A75':'#E5E7EB';}}
+// Hero tabs
+document.querySelectorAll('.hero-tab').forEach(function(t){t.addEventListener('click',function(){document.querySelectorAll('.hero-tab').forEach(function(x){x.classList.remove('on')});t.classList.add('on')})});
+// Init
+document.addEventListener('DOMContentLoaded',function(){var sl=document.getElementById('rev-slider');if(sl)updateRevSlider(sl)});
+// Scroll reveal
+var ro=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');ro.unobserve(e.target)}})},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rev').forEach(function(el){ro.observe(el)});
+<\/script>
+</body>
+</html>`;
+
+      // 12. Download
+      const blob = new Blob([finalHTML], {type:'text/html;charset=utf-8'});
+      const url  = URL.createObjectURL(blob);
+      const a    = document.createElement('a');
+      a.href     = url;
+      a.download = 'occ_ata_hk_final.html';
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(() => { URL.revokeObjectURL(url); a.remove(); }, 1000);
+      toast('✓ occ_ata_hk_final.html downloaded!');
+
+    } catch(err){
+      console.error('Export error:', err);
+      toast('Export failed — see console');
+    }
+
+    btn.textContent = 'Export HTML';
+    btn.disabled = false;
+  }, 100);
+};
+
+/* ════════════════════════════════
+   RESET
+   ════════════════════════════════ */
+window.doReset = function(){
+  if(!confirm('Reset all images, backgrounds, and layout changes?')) return;
+  // Reset CSS vars
+  const vars = ['--navy','--navy2','--navy3','--gold','--gold-l','--teal','--teal-l','--cream','--max','--r'];
+  vars.forEach(v => document.documentElement.style.removeProperty(v));
+  // Reset section paddings
+  document.querySelectorAll('section').forEach(s => { s.style.paddingTop=''; s.style.paddingBottom=''; });
+  // Reset pricing grid & hero layout
+  const pg = document.getElementById('pgrid');
+  if(pg) pg.style.gridTemplateColumns = '';
+  const hl = document.querySelector('.hero-layout');
+  if(hl){ hl.style.gridTemplateColumns=''; hl.style.textAlign=''; }
+  const iw = document.querySelector('.hero-img-wrap');
+  if(iw) iw.style.display = '';
+  // Clear bg layers
+  BG_SECTIONS.forEach(s => {
+    const el = document.getElementById('sbg-'+s.id);
+    if(el) el.style.cssText = '';
+  });
+  // Clear images
+  IMG_SLOTS.forEach(s => {
+    const img = document.getElementById('img-'+s.id);
+    if(img){ img.src=''; img.classList.remove('active'); }
+    restoreSlotLabel(s.id);
+  });
+  // Clear state
+  S.imgs = {}; S.bgs = {};
+  // Rebuild UI
+  const pane = document.getElementById('pane-images');
+  pane.innerHTML = '';
+  buildImgTab();
+  buildBgSelect();
+  refreshBgUI();
+  // Reset theme buttons
+  document.querySelectorAll('.theme-opt').forEach(b => b.classList.remove('on'));
+  document.querySelector('[onclick*="classic"]')?.classList.add('on');
+  // Reset layout opts
+  document.querySelectorAll('.lopt').forEach(b => b.classList.remove('on'));
+  document.querySelector('[onclick*="split"]')?.classList.add('on');
+  document.querySelector('[onclick*="3col"]')?.classList.add('on');
+  // Reset token sliders
+  setVal('v-pad', null);
+  document.querySelectorAll('.tok-row input').forEach(el => el.dispatchEvent(new Event('input')));
+  toast('All changes reset ✓');
+};
+
+/* ════════════════════════════════
+   PAGE BEHAVIOUR
+   ════════════════════════════════ */
+/* ── helpers ── */
+function setVal(id, val){
+  const el = document.getElementById(id);
+  if(el && val !== null) el.value = val;
+}
+function toast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2400);
+}
+
+})();
+</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is statutory audit mandatory for all Hong Kong companies?","acceptedAnswer":{"@type":"Answer","text":"Yes — unlike Singapore, Hong Kong has no audit-exempt category. Every registered company must have its accounts audited annually."}},{"@type":"Question","name":"How is pricing calculated?","acceptedAnswer":{"@type":"Answer","text":"Bookkeeping fees start from $950/year for under 30 transactions. Statutory Audit fees start from $1,221 for revenue below USD 64,500."}}]}</script>
+</body>
+</html>
